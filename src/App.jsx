@@ -247,7 +247,7 @@ const App = () => {
           >
             <h2 style={{ fontSize: '2rem', marginBottom: '24px', textAlign: 'center' }}>Contact</h2>
             <form
-              action="your-backend-endpoint"
+              action="https://connect-i645.onrender.com/api/connect/message/add"
               method="POST"
               style={{
                 maxWidth: '600px',
