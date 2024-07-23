@@ -1,0 +1,43 @@
+.typing {
+  overflow: hidden;
+  border-right: .15em solid #0DA16C; /* Adjust color as needed */
+  white-space: nowrap;
+  animation: typing 2s steps(30, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #0DA16C; } /* Adjust color as needed */
+}
+
+.typing-cursor {
+  display: inline-block;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+
+
+
+@keyframes gradientAnimation {
+  0% { background: linear-gradient(45deg, #0DA16C, #000000); }
+  50% { background: linear-gradient(45deg, #000000, #0DA16C); }
+  100% { background: linear-gradient(45deg, #0DA16C, #000000); }
+}
+
+#home {
+  animation: gradientAnimation 15s ease infinite;
+}
+
+
+section {
+  transition: background 3s ease-in-out;
+}
